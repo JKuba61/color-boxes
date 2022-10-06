@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color boxes</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="settings">
+
+        <div class="animation-speed btns-group">
+            <h2>animation speed:</h2>
+            <button class="setting-btns active-btn" data-setting="speed" data-speed="12">Slow</button>
+            <button class="setting-btns" data-setting="speed" data-speed="3">Normal</button>
+            <button class="setting-btns" data-setting="speed" data-speed=".8">Fast</button>
+        </div>
+
+        <div class="color-range btns-group">
+            <h2>color range:</h2>
+            <button class="setting-btns" data-setting="color" data-color-range="0">red</button>
+            <button class="setting-btns active-btn" data-setting="color" data-color-range="100">green</button>
+            <button class="setting-btns" data-setting="color" data-color-range="200">blue</button>
+            <button class="setting-btns" data-setting="color" data-color-range="360">normal</button>
+        </div>
+
+    </div>
+    <div class="setting-slider">
+        <input type="range" value="70" min="0" max="100" class="slider" id="saturation">
+        <p>Saturation: <span class="saturation-info">70</span>%</p>
+    </div>
+
+    <div class="setting-slider">
+        <input type="range" value="50" min="0" max="100" class="slider" id="light">
+        <p>Light: <span class="light-info">50</span>%</p>
+    </div>
+
+
+    <div class="box">
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
